@@ -1,0 +1,38 @@
+[{
+   "id":"1",
+    "title":"Ingatlaniroda",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740730140/ingatlaniroda_bj0sjr.png",
+   "repo-link":"https://github.com/Marci0224/ingatlaniroda",
+   "topics":["fetch API","Set adatszerkezet","Array.from()","radió gombok használata","checkboxok használata","select használata"],
+   "site-link":"https://marci0224.github.io/ingatlaniroda/"
+  },
+  {  "id":"2",
+    "title":"Autokolcsonzes",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740729952/autokolcsonzes_awit2j.png",
+   "repo-link":"https://github.com/Marci0224/Autokolcsonzes",
+   "topics":["Javascript függvények","Modularitás, tiszta kód","Reszponzív design","Tömbfüggvények"],
+   "site-link":"https://marci0224.github.io/Autokolcsonzes/"
+  },
+  {  "id":"3",
+   "title":"Kepkereso",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740729574/kepkereso_dubcbr.png",
+   "repo-link":"https://github.com/Marci0224/Search_photos",
+   "topics":["fetch API","adatok szűrése","oldallapozás megvalósítása","reszponzív design","Tailwind","Popover API"],
+   "site-link":"https://search-photos-marci0224.netlify.app/"
+  },
+  {  "id":"4",
+   "title":"Viragbolt",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740729446/viragbolt_kim5kj.png",
+   "repo-link":"https://github.com/Marci0224/Viragbolt",
+   "topics":["Fetch API használata","adatok programozott renderelése","reszponzív design"],
+   "site-link":"https://marci0224.github.io/Viragbolt/"
+  },
+  {  "id":"5",
+   "title":"Profilkártya",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740730246/profilkartya_wqhkk9.png",
+   "repo-link":"https://github.com/Marci0224/profiles",
+   "topics":["Reszponzív design","Flexbox vs grid elrendezés","Objektumok destrukturálása","Popover"],
+   "site-link":"https://marci0224.github.io/profiles/"
+  }
+]
+

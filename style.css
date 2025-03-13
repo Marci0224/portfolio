@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  color: white;
+  padding: 10px;
+}
+
+li a{
+  text-decoration: none;
+  background-color: rgb(109, 10, 167);
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+#hero{
+  width: 100vw;
+  height: calc(100vh);
+  background: linear-gradient(90deg, rgb(109, 10, 167), 45%, rgb(160, 47, 226));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  background-color: white;
+  border-radius: 15px;
+  color: rgb(109, 10, 167);
+  margin: 10px;
+  padding: 10px;
+}
+
+#profilkep{
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+#kozep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding: 5px;
+}
+
+.munkak{
+  display: flex;
+}
+
+.munka_kep{
+  width: 70%;
+}
+
+#work{
+  
+}
+
+#urlap{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
