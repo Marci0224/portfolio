@@ -12,45 +12,66 @@
 <body>
   <div class="container">
     <nav>
-      <div>logo</div>
+      <div id="logo">LM</div>
       <ul>
           <li><a href="#about">Rólam</a></li>
-          <li><a href="#work">Munkáim</a></li>
+          <li><a href="#work" id="works">Munkáim</a></li>
           <li><a href="#contact">Kapcsolat</a></li>
       </ul>
     </nav>
 
     <section id="hero">
       <div id="kozep">
-        <img src="" alt="saját fotó" id="profil">
-        <h1>Losonczi Marcell</h1>
-        <blockquote>Ébredj! Kelj fel! Ne állj meg a cél eléréséig.</blockquote>
+        <img src="profilkep.png" alt="saját fotó" id="profil">
+        <div class="nev">
+          <h1>Losonczi Marcell</h1>
+          <blockquote>Ébredj! Kelj fel! Ne állj meg a cél eléréséig.</blockquote>
+        </div>
+        
       </div>
-      
-      <div>
+      <div class="btns">
           <a href="#about" class="btn">Rólam</a>
           <a href="#work" class="btn">Munkáim</a>
           <a href="#contact" class="btn">Kapcsolat</a>
       </div>
     </section>
     <section id="about">
-      <p>Losonczi Marcell vagyok 19 éves és andó Kálmán Technikumba járok tanulni. Az órai munkáim még elég kezdetlegesek, de az idővel és a tapasztalattal egyre jobban tudok fejlődni és hiszek benne, hogy egy nap majd egy cégnél fogok dolgozni informatikusként.</p>
+      <div id="bemutat">
+        <h1>Rólam</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, nobis? Iure animi, ut impedit illum magni natus laudantium voluptatum rem nihil sit ad laboriosam quidem culpa modi atque voluptas in! Mollitia fugiat placeat quibusdam rem, consequuntur nostrum dicta, cum non libero id, voluptatem veritatis neque facere aut veniam explicabo omnis error illum officiis? Quasi voluptates deleniti officia aliquid itaque incidunt! Illo, aliquam dolor eius vel aut hic. Nisi facere dicta assumenda ut, libero voluptate. Suscipit quam similique velit non architecto! Fugiat consequatur labore, ratione aut expedita ad provident facere impedit. Qui accusamus blanditiis explicabo necessitatibus aspernatur sint quos, quaerat at eveniet veritatis! Molestiae, odit beatae eligendi eveniet corporis nostrum, impedit deserunt explicabo asperiores facilis quis quisquam. Sequi ipsa nemo quia. Est dolorem rem nulla optio expedita aut reprehenderit illo quasi repudiandae rerum aliquid et laudantium facere porro repellendus earum officia, nihil qui debitis culpa. Dolore optio fuga a minus debitis! Quas ea perspiciatis eveniet quos necessitatibus enim consequatur recusandae blanditiis, culpa adipisci officiis at reprehenderit provident corporis aperiam consectetur eligendi distinctio. Vitae iste incidunt omnis eveniet cum facilis distinctio blanditiis. Quisquam sunt assumenda tempora dolores voluptates autem incidunt aliquid voluptatibus, illo minima quidem fugiat consequatur accusamus suscipit harum iusto minus dignissimos nulla. Temporibus harum error minus aliquid nulla vero cupiditate. Amet, porro rerum? Itaque eos, quas quaerat ducimus dolor mollitia soluta repellendus! Id in nam ratione sapiente repellendus natus adipisci nemo consequatur repudiandae necessitatibus eos maxime ut, labore sint? Illum. Temporibus odit ad doloribus unde, in animi velit asperiores, nihil iure eos architecto vel voluptatibus, nostrum quae corrupti tempore sequi odio? Quisquam vero labore consequuntur esse optio totam eaque mollitia. In perspiciatis veniam ab quas officiis est, quos, perferendis ut laborum eos animi magnam similique doloremque aspernatur. Enim aut, aperiam repellat nobis dolorem harum aliquam voluptatem, nostrum voluptates tempora magnam.</p>
+      </div>
     </section>
-    <section id="work"></section>
+    <section id="work">
+      <h1>Munkáim</h1>
+    </section>
     <section id="contact">
       <div id="kapcsolat">
-        <h5>Kapcsolat</h5>
+        <h1>Kapcsolat</h1>
         <div>
           <form id="urlap">
-            <h4>Contact form</h4>
-            <input type="text" placeholder="Firstname">
-            <input type="text" placeholder="Lastname">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone Number">
-            <textarea placeholder="message"></textarea>
-            <input type="submit" value="Submit">
+            <div class="irasok">
+              <input type="text" name="firstname" id="firstname" placeholder="First name">
+            </div>
+            
+            <div class="irasok">
+              <input type="text" name="lastname" id="lastname" placeholder="Last name">
+            </div>
+            
+            <div class="irasok">
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            
+            <div class="irasok">
+              <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+            </div>
+
+            <div class="irasok">
+              <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="submit">
           </form>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5450.373412668256!2d19.68768895416756!3d46.91871107857644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da039cc46819%3A0x76e03484e50b2f33!2zS2Vjc2tlbcOpdGkgU1pDIEthbmTDsyBLw6FsbcOhbiBUZWNobmlrdW0!5e0!3m2!1shu!2shu!4v1741858028621!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5450.373412668256!2d19.68768895416756!3d46.91871107857644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da039cc46819%3A0x76e03484e50b2f33!2zS2Vjc2tlbcOpdGkgU1pDIEthbmTDsyBLw6FsbcOhbiBUZWNobmlrdW0!5e0!3m2!1shu!2shu!4v1741858028621!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </div>
