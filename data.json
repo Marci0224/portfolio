@@ -15,7 +15,7 @@
   },
   {  "id":"3",
    "title":"Kepkereso",
-   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740729574/kepkereso_dubcbr.png",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1742377235/kepkereso_u7ieos.png",
    "repo-link":"https://github.com/Marci0224/Search_photos",
    "topics":["fetch API","adatok szűrése","oldallapozás megvalósítása","reszponzív design","Tailwind","Popover API"],
    "site-link":"https://search-photos-marci0224.netlify.app/"

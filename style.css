@@ -1,41 +1,69 @@
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
   width: 100%;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/*html,body{
+  overflow-x: hidden;
+}*/
 
 nav ul{
   display: flex;
   gap: 10px;
   list-style: none;
   align-items: center;
-  justify-content: flex-end;
   height: 100%;
   color: white;
   padding: 10px;
+  height: 50px;
+}
+
+#logo{
+  background-color: rgb(109, 10, 167);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 li a{
   text-decoration: none;
-  background-color: rgb(109, 10, 167);
-  border: 1px solid white;
-  color: white;
+  color: black;
   padding: 5px;
   text-align: center;
 }
 
+#works{
+  border-left: rgb(109, 10, 167) 2px solid;
+  border-right: rgb(109, 10, 167) 2px solid;
+  padding: 5px;
+}
+
 #hero{
   width: 100vw;
-  height: calc(100vh);
-  background: linear-gradient(90deg, rgb(109, 10, 167), 45%, rgb(160, 47, 226));
+  height: 100vh;
+  background: linear-gradient(105deg, rgb(109, 10, 167), 45%, rgb(160, 47, 226));
   color: white;
   display: flex;
+  gap: 30vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -43,15 +71,49 @@ li a{
 
 .btn{
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   color: rgb(109, 10, 167);
   margin: 10px;
   padding: 10px;
+  text-decoration: none;
+  width: 200px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-#profilkep{
+.btn:hover{
+  background-color: rgb(175, 90, 224);
+  color: white;
+}
+
+.btns{
+  display: flex;
+}
+
+#profil{
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 5px white solid;
+}
+
+.nev{
+  margin-left: 20px;
+}
+
+blockquote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px white solid;
+  margin-top: 10px;
+  width: 250px;
+  height: 100px;
+  padding-left: 5px;
+  font-size: 1.5rem;
+  padding-left: 15px;
 }
 
 #kozep{
@@ -63,20 +125,156 @@ li a{
   padding: 5px;
 }
 
+#work{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#work h1{
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
 .munkak{
   display: flex;
+  margin: 10px;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgb(160, 47, 226);
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.munkak h1{
+  color: rgb(160, 47, 226);
+  font-size: 2rem;
+}
+
+hr{
+  
+  border: 1px rgb(160, 47, 226) dotted;
+  margin-bottom: 10px;
+}
+
+.infok{
+  text-align: left;
+  position: relative;
+}
+
+.links{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a{
+  color: rgb(160, 47, 226);
+  text-align: right;
+  
 }
 
 .munka_kep{
-  width: 70%;
+  width: 48%;
+  border-radius: 10px;
+  height: auto;
 }
 
-#work{
-  
+#about{
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+#bemutat{
+  max-width: 800px;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+#bemutat h1{
+  text-align: left;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 #urlap{
   display: flex;
   flex-direction: column;
   width: 320px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.irasok{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 90px;
+}
+
+input, textarea{
+  border-radius: 3px;
+  border: 1px rgb(109, 10, 167) solid;
+  background-color: rgb(218, 193, 233);
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 5px 5px rgb(160, 47, 226);
+  margin: 3px;
+}
+
+.submit{
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 40px;
+  background-color: rgb(109, 10, 167);
+  color: white;
+  padding: 7px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+#kapcsolat{
+  background-color: rgb(56, 50, 50);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kapcsolat h1{
+  text-align: left;
+  font-size: 2rem;
+  display: flex;
+}
+
+#kapcs_kozep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#eler{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#urlap h1{
+  color: rgb(109, 10, 167);
+  font-size: 2rem
 }
