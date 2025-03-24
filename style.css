@@ -16,6 +16,8 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 2px 10px lightgray;
+  z-index: 1000;
 }
 
 
@@ -42,26 +44,33 @@ nav ul{
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+#pf{
+  color: #333;
+  font-weight: 500;
 }
 
 li a{
   text-decoration: none;
   color: black;
-  padding: 5px;
   text-align: center;
 }
 
+li a:hover{
+  color: rgb(160, 47, 226);
+}
+
 #works{
-  border-left: rgb(109, 10, 167) 2px solid;
-  border-right: rgb(109, 10, 167) 2px solid;
+  border-left: rgb(109, 10, 167) 3px solid;
+  border-right: rgb(109, 10, 167) 3px solid;
   padding: 5px;
 }
 
 #hero{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(105deg, rgb(109, 10, 167), 45%, rgb(160, 47, 226));
+  background: linear-gradient(115deg, rgb(78, 7, 137), rgb(160, 47, 226));
   color: white;
   display: flex;
   gap: 30vh;
@@ -72,10 +81,10 @@ li a{
 
 .btn{
   background-color: white;
-  border-radius: 20px;
+  border-radius: 25px;
   color: rgb(109, 10, 167);
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   text-decoration: none;
   width: 200px;
   display: block;
@@ -91,13 +100,16 @@ li a{
 
 .btns{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #profil{
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   border: 5px white solid;
+  object-fit: cover;
 }
 
 .nev{
@@ -108,6 +120,7 @@ blockquote{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-style: italic;
   border-left: 3px white solid;
   margin-top: 10px;
   width: 250px;
@@ -121,6 +134,7 @@ blockquote{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 10px;
   padding: 5px;
@@ -142,7 +156,7 @@ blockquote{
   margin: 10px;
   padding: 1rem;
   box-shadow: 0px 0px 5px rgb(160, 47, 226);
-  gap: 1rem;
+  border-radius: 5px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -153,110 +167,65 @@ blockquote{
 }
 
 hr{
-  
   border: 1px rgb(160, 47, 226) dotted;
   margin-bottom: 10px;
 }
 
+#temak li{
+  margin: 5px;
+}
+
+.munka_kep{
+  width: 50%;
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 0px 0px 5px #333;
+}
+
 .infok{
   text-align: left;
-  position: relative;
+  width: 50%;
+  padding: 1rem;
 }
 
 .links{
   width: 100%;
   padding: 10px;
   display: flex;
+  gap: 5px;
   flex-direction: column;
 }
 
 .links a{
   color: rgb(160, 47, 226);
-  text-align: right;
-  
-}
-
-.munka_kep{
-  width: 48%;
-  border-radius: 10px;
-  height: auto;
+  text-align: right; 
 }
 
 #about{
-  height: 100vh;
-  width: 100vw;
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: center;
-}
-
-#bemutat{
   max-width: 800px;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 10px;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 1rem;
+  text-indent: 10px;
   text-align: justify;
-  font-size: 1.1rem;
-  padding: 10px;
+  font-size: 1.2rem;
 }
 
-#bemutat h1{
+#about h1{
   text-align: left;
   padding-bottom: 5px;
-  margin-top: 10px;
 }
 
-#urlap{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.irasok{
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-textarea{
-  resize: vertical;
-  min-height: 90px;
-}
-
-input, textarea{
-  border-radius: 3px;
-  border: 1px rgb(109, 10, 167) solid;
-  background-color: rgb(218, 193, 233);
-  width: 100%;
-  height: 40px;
-  box-shadow: 0px 5px 5px rgb(160, 47, 226);
-  margin: 3px;
-}
-
-.submit{
-  margin: 0 auto;
-  border-radius: 20px;
-  height: 40px;
-  background-color: rgb(109, 10, 167);
-  color: white;
-  padding: 7px;
-  width: 200px;
-  margin-top: 5px;
+#about p{
+  color: #333;
 }
 
 #kapcsolat{
-  padding: 50px;
+  padding-bottom: 20px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-iframe{
-  width: 100%;
 }
 
 #contact{
@@ -275,6 +244,7 @@ iframe{
   justify-content: center;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 #elersor{
@@ -286,6 +256,74 @@ iframe{
 
 #eler{
   margin: 10px;
+}
+
+.map{
+  display: flex;
+}
+
+iframe{
+  width: 100%;
+}
+
+#urlap{
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 320px;
+  height: max-content;
+}
+
+.irasok{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 90px;
+}
+
+input, textarea{
+  border-radius: 3px;
+  border: 1px rgb(109, 10, 167) solid;
+  background-color: rgb(218, 193, 233);
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 5px 5px rgb(160, 47, 226);
+  margin: 3px;
+}
+
+.gomb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit{
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 40px;
+  background-color: rgb(109, 10, 167);
+  color: white;
+  padding: 7px;
+  width: 200px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.submit:hover{
+  background-color: rgb(120, 73, 148);
+  color: white;
 }
 
 #urlap h1{
@@ -300,18 +338,81 @@ iframe{
   align-items: center;
 }
 
-#pf{
-  color: lightgray;
+@media screen and (max-width:700px) {
+  #kapcs_kozep{
+    gap: 10px;
+    
+  }
+  #pf{
+    opacity: 0;
+  }
+  .btn{
+    width: 150px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+  }
+  #work h1{
+    font-size: 1.5rem;
+  }
+  
 }
 
-@media screen and (min-width:321px) and (max-width:830px) {
-  #munka_kep{
+@media screen and (max-width:800px) {
+  .munka_kep{
     width: 100%;
+  }
+  .infok{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:530px) {
+  li a, #pf{
+    font-size: 12px;
+  }
+  #logo{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  #hero{
+    padding-top: 20px;
+    gap: 10vh;
+  }
+  #kozep{
+    margin-top: 30px;
+    padding: 5px;
+  }
+  .nev h1{
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width:320px) {
   #pf{
     opacity: 0;
+  }
+  #contact h1{
+    padding: 10px;
+  }
+  #kapcsolat{
+    padding: 15px;
+  }
+  #kapcs_kozep{
+    gap: 15px;
+  }
+  #profil{
+    width: 200px;
+    height: 200px;
+  }
+  .btn{
+    width: 175px;
+    background-color: white;
+    border-radius: 22.5px;
+    padding: 13.5px;
   }
 }

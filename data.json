@@ -1,14 +1,14 @@
 [{
    "id":"1",
     "title":"Ingatlaniroda",
-   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740730140/ingatlaniroda_bj0sjr.png",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1742832050/ingatlaniroda_tsxoxa.png",
    "repo-link":"https://github.com/Marci0224/ingatlaniroda",
    "topics":["fetch API","Set adatszerkezet","Array.from()","radió gombok használata","checkboxok használata","select használata"],
    "site-link":"https://marci0224.github.io/ingatlaniroda/"
   },
   {  "id":"2",
     "title":"Autokolcsonzes",
-   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1740729952/autokolcsonzes_awit2j.png",
+   "photo_url":"https://res.cloudinary.com/dj037fsqr/image/upload/v1742832005/autokolcsonzes_voo8qr.png",
    "repo-link":"https://github.com/Marci0224/Autokolcsonzes",
    "topics":["Javascript függvények","Modularitás, tiszta kód","Reszponzív design","Tömbfüggvények"],
    "site-link":"https://marci0224.github.io/Autokolcsonzes/"
